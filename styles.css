@@ -99,6 +99,11 @@ html{
 }
 .login__container--remember a:hover{
     text-decoration:underline;
+    cursor:pointer;
+}
+.login__container--remember label span:hover{
+    text-decoration:underline;
+    cursor:pointer;
 }
 
 .login__container--socialmedia div{
@@ -111,8 +116,13 @@ html{
 .login__container--socialmedia div img{
     width:30px;
     padding-right: 10px;
-    
 }
+.login__container--socialmedia div a{
+    cursor:pointer;}
+    
+.login__container--socialmedia div a:hover{
+    text-decoration:underline;}
+
 .login__container--register{
     text-align: center;
 }
@@ -121,12 +131,14 @@ html{
     font-weight:bold;
     text-decoration:none;
     font-size:1.2rem;
+    
 }
 .login__container--register {
     font-size:1.2rem;
 }
 .login__container--register a:hover{
     text-decoration:underline;
+    cursor:pointer;
 }
 .footer{
     display:flex;
@@ -157,12 +169,20 @@ html{
 .login__container--register-iniciarSesión a:hover{
     text-decoration:underline;
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:425px){
+    .login .login__container{
+        border:none;
+        background-color:transparent;
+        padding: 0px 10px 15px;
+    }
+    .login .login__container h2{
+        padding-top: 0px;
+    }
     .footer{
         justify-content: center;
         align-items:flex-start;
         flex-direction:column;
-        padding:20px 0;
+        margin:20px 0;
     }
     .footer a{
         margin:5px 0;
